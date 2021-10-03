@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be6e255e-9ce1-43c8-8186-35140f665692" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CS4310_NACHOS_Project1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nachos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nachos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nachos/nachos/threads/Condition2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nachos/nachos/threads/Condition2.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yyefjxjGr8RDlC3HbrvBsaxbUA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nachos" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.threadgrader1">
+    <configuration name="autograder" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="nachos.machine.Machine" />
+      <module name="Nachos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/nachos/proj1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="threadgrader1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="nachos.machine.Machine" />
+      <module name="Nachos" />
+      <option name="PROGRAM_PARAMETERS" value="-- nachos.ag.ThreadGrader1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.autograder" />
+      <item itemvalue="Application.threadgrader1" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be6e255e-9ce1-43c8-8186-35140f665692" name="Changes" comment="" />
+      <created>1633228365303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633228365303</updated>
+    </task>
+    <servers />
+  </component>
+</project>
