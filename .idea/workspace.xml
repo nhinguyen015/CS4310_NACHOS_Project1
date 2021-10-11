@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be6e255e-9ce1-43c8-8186-35140f665692" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/Alarm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/Alarm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/Alarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/Alarm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/Communicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/Communicator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/KThread$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/KThread$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/KThread$PingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/KThread$PingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/KThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/KThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
