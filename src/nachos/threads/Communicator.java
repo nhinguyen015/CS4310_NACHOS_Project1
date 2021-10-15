@@ -18,8 +18,7 @@ public class Communicator {
         lock = new Lock();
         speaker = new Condition2(lock);
         listener = new Condition2(lock);
-        speakerList = new LinkedList<>();
-        listenerList = new LinkedList<>();
+        cQueue = new LinkedList<>();
     }
 
     /**
@@ -34,14 +33,12 @@ public class Communicator {
      */
     public void speak(int word) {
         lock.acquire();
-        while (!listenerList.isEmpty()) {
-            listener.wake();
-            //how to send word to listener?
-        }
-        if (listenerList.isEmpty()) {
-            speakerList.add(KThread.currentThread());
+        while (!cQueue.isEmpty()) {
             speaker.sleep();
         }
+        cQueue.add(word);
+        listener.wake();
+        lock.release();
     }
 
     /**
@@ -52,20 +49,16 @@ public class Communicator {
      */    
     public int listen() {
         lock.acquire();
-        while (!speakerList.isEmpty()) {
-            speaker.wake();
-            //how to receive word from speaker?
-        }
-        if (speakerList.isEmpty()) {
-            //listenerList.add();
+        while (cQueue.isEmpty()) {
             listener.sleep();
         }
+        int word = cQueue.poll();
+        speaker.wake();
         lock.release();
-
-        return 0;
+        return word;
     }
 
     private Lock lock;
     private Condition2 listener, speaker;
-    private static Queue<KThread> speakerList, listenerList;
+    private static Queue<Integer> cQueue;
 }
