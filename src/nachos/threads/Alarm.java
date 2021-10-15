@@ -32,14 +32,14 @@ public class Alarm {
      * that should be run.
      */
     public void timerInterrupt() {
-        AlarmThread temp;
+        AlarmThread at;
         while (!threadQueue.isEmpty() && Machine.timer().getTime() >= threadQueue.peek().wakeTime) {
-            temp = threadQueue.poll();
-            temp.lock.acquire();
+            at = threadQueue.poll();
+            at.lock.acquire();
             boolean intStatus = Machine.interrupt().disable();
-            temp.cond.wake();
+            at.cond.wake();
             Machine.interrupt().restore(intStatus);
-            temp.lock.release();
+            at.lock.release();
         }
         KThread.currentThread().yield();
     }
@@ -59,14 +59,13 @@ public class Alarm {
      */
     public void waitUntil(long x) {
         long wakeTime = Machine.timer().getTime() + x;
-        boolean intStatus = Machine.interrupt().disable();
-        Machine.interrupt().restore(intStatus);
         while (wakeTime > Machine.timer().getTime()) {
             AlarmThread at = new AlarmThread(KThread.currentThread(), wakeTime);
             threadQueue.add(at);
             at.lock.acquire();
             at.cond.sleep();
             at.lock.release();
+            KThread.currentThread().yield();
         }
     }
 
