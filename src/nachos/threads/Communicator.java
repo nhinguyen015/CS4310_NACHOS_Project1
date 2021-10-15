@@ -1,8 +1,7 @@
 package nachos.threads;
 
-import nachos.machine.*;
-
-import java.util.PriorityQueue;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * A <i>communicator</i> allows threads to synchronously exchange 32-bit
@@ -19,8 +18,8 @@ public class Communicator {
         lock = new Lock();
         speaker = new Condition2(lock);
         listener = new Condition2(lock);
-        speakerQ = new PriorityQueue();
-        listenerQ = new PriorityQueue();
+        speakerList = new LinkedList<>();
+        listenerList = new LinkedList<>();
     }
 
     /**
@@ -35,12 +34,12 @@ public class Communicator {
      */
     public void speak(int word) {
         lock.acquire();
-        while (!listenerQ.isEmpty()) {
+        while (!listenerList.isEmpty()) {
             listener.wake();
             //how to send word to listener?
         }
-        if (listenerQ.isEmpty()) {
-            speakerQ.add(speaker);
+        if (listenerList.isEmpty()) {
+            speakerList.add(KThread.currentThread());
             speaker.sleep();
         }
     }
@@ -53,12 +52,12 @@ public class Communicator {
      */    
     public int listen() {
         lock.acquire();
-        while (!speakerQ.isEmpty()) {
+        while (!speakerList.isEmpty()) {
             speaker.wake();
             //how to receive word from speaker?
         }
-        if (speakerQ.isEmpty()) {
-            listenerQ.add(listener);
+        if (speakerList.isEmpty()) {
+            //listenerList.add();
             listener.sleep();
         }
         lock.release();
@@ -68,5 +67,5 @@ public class Communicator {
 
     private Lock lock;
     private Condition2 listener, speaker;
-    private PriorityQueue<Condition2> speakerQ, listenerQ;
+    private static Queue<KThread> speakerList, listenerList;
 }

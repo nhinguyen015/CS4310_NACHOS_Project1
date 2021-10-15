@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be6e255e-9ce1-43c8-8186-35140f665692" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/Communicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/Communicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nachos/threads/Condition2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Condition2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Condition2.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yyefjxjGr8RDlC3HbrvBsaxbUA" />
   <component name="ProjectViewState">
@@ -28,6 +35,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="RunManager" selected="Application.threadgrader4">
     <configuration name="autograder" type="Application" factoryName="Application">
