@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be6e255e-9ce1-43c8-8186-35140f665692" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nachos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nachos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/nachos/proj1/nachos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/proj1/nachos.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler$PriorityQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler$PriorityQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler$ThreadState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler$ThreadState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/nachos/threads/PriorityScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nachos/proj1/nachos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/proj1/nachos.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/nachos/proj1" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -38,7 +45,7 @@
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
-  <component name="RunManager" selected="Application.threadgrader4">
+  <component name="RunManager" selected="Application.threadgrader5">
     <configuration name="autograder" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="nachos.machine.Machine" />
       <module name="Nachos" />
@@ -93,6 +100,7 @@
       </method>
     </configuration>
     <configuration name="threadgrader5" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
       <option name="MAIN_CLASS_NAME" value="nachos.machine.Machine" />
       <module name="Nachos" />
       <option name="PROGRAM_PARAMETERS" value="-- nachos.ag.ThreadGrader5" />
@@ -142,5 +150,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
